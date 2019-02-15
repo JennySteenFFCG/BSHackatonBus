@@ -1,0 +1,14 @@
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\bin\Debug\netcoreapp2.1\HackatonBus.Suppliers.deps.json
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\bin\Debug\netcoreapp2.1\HackatonBus.Suppliers.runtimeconfig.json
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\bin\Debug\netcoreapp2.1\HackatonBus.Suppliers.runtimeconfig.dev.json
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\bin\Debug\netcoreapp2.1\HackatonBus.Suppliers.dll
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\bin\Debug\netcoreapp2.1\HackatonBus.Suppliers.pdb
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\obj\Debug\netcoreapp2.1\HackatonBus.Suppliers.csprojAssemblyReference.cache
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\obj\Debug\netcoreapp2.1\HackatonBus.Suppliers.csproj.CoreCompileInputs.cache
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\obj\Debug\netcoreapp2.1\HackatonBus.Suppliers.RazorAssemblyInfo.cache
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\obj\Debug\netcoreapp2.1\HackatonBus.Suppliers.RazorAssemblyInfo.cs
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\obj\Debug\netcoreapp2.1\HackatonBus.Suppliers.AssemblyInfoInputs.cache
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\obj\Debug\netcoreapp2.1\HackatonBus.Suppliers.AssemblyInfo.cs
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\obj\Debug\netcoreapp2.1\HackatonBus.Suppliers.RazorTargetAssemblyInfo.cache
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\obj\Debug\netcoreapp2.1\HackatonBus.Suppliers.dll
+C:\Users\jenny.steen\source\repos\BSHackatonBus\HackatonBus\HackatonBus.Web\obj\Debug\netcoreapp2.1\HackatonBus.Suppliers.pdb
