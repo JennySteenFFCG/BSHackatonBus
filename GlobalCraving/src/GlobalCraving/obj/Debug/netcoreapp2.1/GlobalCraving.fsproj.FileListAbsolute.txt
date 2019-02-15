@@ -1,0 +1,10 @@
+C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\bin\Debug\netcoreapp2.1\WebRoot\main.css
+C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\bin\Debug\netcoreapp2.1\web.config
+C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\bin\Debug\netcoreapp2.1\GlobalCraving.deps.json
+C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\bin\Debug\netcoreapp2.1\GlobalCraving.runtimeconfig.json
+C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\bin\Debug\netcoreapp2.1\GlobalCraving.runtimeconfig.dev.json
+C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\bin\Debug\netcoreapp2.1\GlobalCraving.dll
+C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\bin\Debug\netcoreapp2.1\GlobalCraving.pdb
+C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\obj\Debug\netcoreapp2.1\GlobalCraving.fsprojAssemblyReference.cache
+C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\obj\Debug\netcoreapp2.1\GlobalCraving.dll
+C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\obj\Debug\netcoreapp2.1\GlobalCraving.pdb
