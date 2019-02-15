@@ -11800,9 +11800,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jenny.steen\\source\\repos\\BSHackatonBus\\HackatonBus\\HackatonBus.Web\\HackatonBus.Web.csproj",
-      "projectName": "HackatonBus.Web",
-      "projectPath": "C:\\Users\\jenny.steen\\source\\repos\\BSHackatonBus\\HackatonBus\\HackatonBus.Web\\HackatonBus.Web.csproj",
+      "projectUniqueName": "C:\\Users\\jenny.steen\\source\\repos\\BSHackatonBus\\HackatonBus\\HackatonBus.Web\\HackatonBus.Suppliers.csproj",
+      "projectName": "HackatonBus.Suppliers",
+      "projectPath": "C:\\Users\\jenny.steen\\source\\repos\\BSHackatonBus\\HackatonBus\\HackatonBus.Web\\HackatonBus.Suppliers.csproj",
       "packagesPath": "C:\\Users\\jenny.steen\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\jenny.steen\\source\\repos\\BSHackatonBus\\HackatonBus\\HackatonBus.Web\\obj\\",
       "projectStyle": "PackageReference",
