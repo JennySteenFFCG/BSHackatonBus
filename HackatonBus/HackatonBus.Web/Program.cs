@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using HackatonBus.Suppliers;
+﻿using HackatonBus.Suppliers;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 
 namespace HackatonBus.Web
 {
@@ -24,6 +17,10 @@ namespace HackatonBus.Web
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .ConfigureServices(services => { services.AddSingleton(_requestsStore); });
+                .ConfigureServices(services =>
+                {
+                    services.AddSingleton(_requestsStore);
+                    services.AddSingleton(new AddGroceryHandler(_requestsStore));
+                });
     }
 }

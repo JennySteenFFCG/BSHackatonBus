@@ -27,6 +27,9 @@ namespace HackatonBus.Web.Controllers
         public void Post(string grocery, int numberOfItems)
         {
             _requestsStore.RemoveRequest(grocery, numberOfItems);
+
+            // Remove from store
+            // Send to bus
         }
 
     }
