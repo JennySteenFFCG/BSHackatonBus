@@ -26,7 +26,7 @@ namespace HackatonBus.Web.Controllers
         [HttpPost("{grocery}/{numberOfItems}")]
         public void Post(string grocery, int numberOfItems)
         {
-            _requestsStore.AddRequest(grocery, numberOfItems);
+            _requestsStore.RemoveRequest(grocery, numberOfItems);
         }
 
     }
