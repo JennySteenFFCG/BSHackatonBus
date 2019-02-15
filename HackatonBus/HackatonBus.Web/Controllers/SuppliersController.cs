@@ -23,10 +23,10 @@ namespace HackatonBus.Web.Controllers
             return _requestsStore.GetRequests();
         }
 
-        [HttpPost("{grocery}/{numberOfItems}")]
-        public void Post(string grocery, int numberOfItems)
+        [HttpPost("{grocery}")]
+        public void Post(string grocery)
         {
-            _requestsStore.RemoveRequest(grocery, numberOfItems);
+            _requestsStore.RemoveRequest(grocery, 1);
 
             // Remove from store
             // Send to bus
