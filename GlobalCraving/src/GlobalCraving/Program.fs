@@ -18,6 +18,10 @@ let webApp =
             choose [
                 route "/api/burgerMenu" >=> burgerMenuHandler
             ]
+        POST >=>
+            choose [
+                route "/api/burgerOrder" >=> burgerOrderHandler
+            ]
         setStatusCode 404 >=> text "Not Found" ]
 
 // ---------------------------------
