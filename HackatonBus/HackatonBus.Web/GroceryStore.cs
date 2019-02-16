@@ -1,16 +1,17 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace HackatonBus.Suppliers
 {
-    public class RequestsStore
+    public class GroceryStore
     {
-        private Dictionary<string, int> _requests;
+        private readonly Dictionary<string, int> _requests;
 
-        public RequestsStore()
+        public GroceryStore()
         {
             _requests = new Dictionary<string, int>();
         }
+
+        public Dictionary<string, int> CurrentGroceries() => _requests;
 
         public void AddRequest(string newRequest, int numberOfItems)
         {
@@ -20,11 +21,6 @@ namespace HackatonBus.Suppliers
             }
 
             _requests.TryAdd(newRequest, numberOfItems);
-        }
-
-        public Dictionary<string, int> GetRequests()
-        {
-            return _requests;
         }
 
         public void RemoveRequest(string newRequest, int numberOfItems)

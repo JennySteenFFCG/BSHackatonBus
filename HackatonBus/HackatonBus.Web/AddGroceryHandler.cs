@@ -1,21 +1,24 @@
 ﻿using NServiceBus;
+using NServiceBus.Logging;
 using System.Threading.Tasks;
 
 namespace HackatonBus.Suppliers
 {
-    public class AddGroceryHandler :
-        IHandleMessages<AddGrocery>
+    public class AddGroceryHandler : IHandleMessages<Grocery>
     {
-        private RequestsStore _requestsStore;
+        private readonly GroceryStore _groceryStore;
+        private static readonly ILog Log = LogManager.GetLogger<AddGroceryHandler>();
 
-        public AddGroceryHandler(RequestsStore requestsStore)
+        public AddGroceryHandler(GroceryStore groceryStore)
         {
-            _requestsStore = requestsStore;
+            _groceryStore = groceryStore;
         }
 
-        public Task Handle(AddGrocery message, IMessageHandlerContext context)
+        public Task Handle(Grocery message, IMessageHandlerContext context)
         {
-            _requestsStore.AddRequest(message.Name, message.Amount);
+            Log.Info($"Received a wonderful {message.Name}.");
+
+            _groceryStore.AddRequest(message.Name, 1);
 
             return Task.CompletedTask;
         }
