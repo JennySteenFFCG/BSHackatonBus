@@ -16,7 +16,7 @@ namespace HackatonBus.Suppliers
 
         public Task Handle(Grocery message, IMessageHandlerContext context)
         {
-            Log.Info($"Received a wonderful {message.Name}.");
+            Log.Info($"Chef needs a {message.Name}.");
 
             _groceryStore.AddRequest(message.Name, 1);
 

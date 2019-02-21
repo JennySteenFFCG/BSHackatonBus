@@ -13,7 +13,7 @@ namespace HackatonBus.Web.Controllers
     {
         private readonly GroceryStore _groceryStore;
         private readonly IMessageSession _messageSession;
-        private static readonly ILog Log = LogManager.GetLogger<AddGroceryHandler>();
+        private static readonly ILog Log = LogManager.GetLogger<SuppliersController>();
 
         public SuppliersController(IMessageSession messageSession, GroceryStore groceryStore)
         {
@@ -38,8 +38,9 @@ namespace HackatonBus.Web.Controllers
             await _messageSession.Send(groceryToChef)
                 .ConfigureAwait(false);
 
-            Log.Info($"Posted a lovely {groceryToChef.Name}");
             _groceryStore.RemoveRequest(grocery, 1);
+
+            Log.Info($"Posted a lovely {groceryToChef.Name}");
         }
     }
 }

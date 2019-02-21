@@ -22,13 +22,14 @@ namespace HackatonBus.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<GroceryStore>();
+            var groceryStore = new GroceryStore();
+            services.AddSingleton(groceryStore);
 
             var endpointConfiguration = new EndpointConfiguration("suppliers");
+            endpointConfiguration.License(license);
+
             var transport = endpointConfiguration.UseTransport<AzureServiceBusTransport>();
             transport.ConnectionString(connectionString);
-
-            endpointConfiguration.License(license);
 
             var routing = transport.Routing();
             routing.RouteToEndpoint(typeof(Grocery), "groceries");
@@ -42,7 +43,6 @@ namespace HackatonBus.Web
             var endpoint = Endpoint.Start(endpointConfiguration).GetAwaiter().GetResult();
 
             services.AddSingleton<IMessageSession>(endpoint);
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
