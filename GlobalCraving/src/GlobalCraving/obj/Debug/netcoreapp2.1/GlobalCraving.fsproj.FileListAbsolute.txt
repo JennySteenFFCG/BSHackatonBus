@@ -8,3 +8,4 @@ C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCravi
 C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\obj\Debug\netcoreapp2.1\GlobalCraving.fsprojAssemblyReference.cache
 C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\obj\Debug\netcoreapp2.1\GlobalCraving.dll
 C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\obj\Debug\netcoreapp2.1\GlobalCraving.pdb
+C:\Users\gustav.ohman\Documents\Code\BSHackatonBus\GlobalCraving\src\GlobalCraving\bin\Debug\netcoreapp2.1\License.xml

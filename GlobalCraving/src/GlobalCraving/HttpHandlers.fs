@@ -14,10 +14,12 @@ open System
                 return! json response next ctx
             }
 
-   let burgerOrderHandler =
+    let burgerOrderHandler =
         fun (next : HttpFunc) (ctx : HttpContext) ->
             task {
-                let order = ctx.BindJsonAsync<BurgerOrder>()
-                let response = Guid.NewGuid()
+                let! order = ctx.BindJsonAsync<BurgerOrder>()
+                 
+                let response =
+                    NServiceBus.Bus.sendOrder {name=order.burgerKey}
                 return! json response next ctx
             }

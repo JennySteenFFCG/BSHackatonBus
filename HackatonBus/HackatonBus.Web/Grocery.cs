@@ -2,9 +2,8 @@
 
 namespace HackatonBus.Suppliers
 {
-    public class AddGrocery : ICommand
+    public class Grocery : IMessage
     {
         public string Name { get; set; }
-        public int Amount => 1;
     }
 }

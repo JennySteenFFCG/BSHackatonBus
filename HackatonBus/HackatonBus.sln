@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackatonBus.Suppliers", "HackatonBus.Web\HackatonBus.Suppliers.csproj", "{DDC78535-CECD-4CE0-9C37-C54648794669}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackatonBus.Suppliers.Tests", "HackatonBus.Suppliers.Tests\HackatonBus.Suppliers.Tests.csproj", "{3BCC503B-A827-4801-9490-9EE8689BF8C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackatonBus.Suppliers.Tests", "HackatonBus.Suppliers.Tests\HackatonBus.Suppliers.Tests.csproj", "{3BCC503B-A827-4801-9490-9EE8689BF8C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

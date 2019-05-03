@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using HackatonBus.Suppliers;
+﻿using HackatonBus.Suppliers;
 using Microsoft.AspNetCore.Mvc;
+using NServiceBus;
+using NServiceBus.Logging;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace HackatonBus.Web.Controllers
 {
@@ -11,26 +11,36 @@ namespace HackatonBus.Web.Controllers
     [ApiController]
     public class SuppliersController : ControllerBase
     {
-        private RequestsStore _requestsStore;
-        public SuppliersController(RequestsStore requestStore)
+        private readonly GroceryStore _groceryStore;
+        private readonly IMessageSession _messageSession;
+        private static readonly ILog Log = LogManager.GetLogger<SuppliersController>();
+
+        public SuppliersController(IMessageSession messageSession, GroceryStore groceryStore)
         {
-            _requestsStore = requestStore;
+            _groceryStore = groceryStore;
+            _messageSession = messageSession;
         }
 
         [HttpGet]
         public Dictionary<string, int> Get()
         {
-            return _requestsStore.GetRequests();
+            return _groceryStore.CurrentGroceries();
         }
 
-        [HttpPost("{grocery}/{numberOfItems}")]
-        public void Post(string grocery, int numberOfItems)
+        [HttpPost("{grocery}")]
+        public async Task Post(string grocery)
         {
-            _requestsStore.RemoveRequest(grocery, numberOfItems);
+            var groceryToChef = new Grocery()
+            {
+                Name = grocery
+            };
 
-            // Remove from store
-            // Send to bus
+            await _messageSession.Send(groceryToChef)
+                .ConfigureAwait(false);
+
+            _groceryStore.RemoveRequest(grocery, 1);
+
+            Log.Info($"Posted a lovely {groceryToChef.Name}");
         }
-
     }
 }
